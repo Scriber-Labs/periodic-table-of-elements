@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import spaceBackground from '@/imports/spacebackground.png';
+import vanillaGalaxy from '@/imports/vanilla_galaxy.png';
 
 interface Element {
   number: number;
@@ -162,8 +164,8 @@ export function PeriodicTable() {
   return (
     <div className="min-h-screen w-full p-4 sm:p-6 lg:p-8 bg-gradient-to-br from-[#0d1117] via-[#161b22] to-[#0d1117] relative overflow-hidden">
       {/* Background Effects */}
-      <div className="absolute inset-0 bg-[url('/src/imports/spacebackground.png')] bg-cover bg-center opacity-20" />
-      <div className="absolute inset-0 bg-[url('/src/imports/vanilla_galaxy.png')] bg-cover bg-center opacity-10" />
+      <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: `url(${spaceBackground})` }} />
+      <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: `url(${vanillaGalaxy})` }} />
 
       {/* Title */}
       <div className="relative z-10 mb-6 sm:mb-8 text-center" style={{ fontFamily: 'Aclonica, sans-serif' }}>
