@@ -53,91 +53,94 @@ const elements: Element[] = [
   { number: 35, symbol: 'Br', name: 'Bromine', mass: 79.90, category: 'halogen', gridRow: 4, gridCol: 17, electronConfig: '[Ar] 3d¹⁰ 4s² 4p⁵' },
   { number: 36, symbol: 'Kr', name: 'Krypton', mass: 83.80, category: 'noble-gas', gridRow: 4, gridCol: 18, electronConfig: '[Ar] 3d¹⁰ 4s² 4p⁶' },
 
-  { number: 37, symbol: 'Rb', name: 'Rubidium', mass: 85.47, category: 'alkali-metal', gridRow: 5, gridCol: 1 },
-  { number: 38, symbol: 'Sr', name: 'Strontium', mass: 87.62, category: 'alkaline-earth', gridRow: 5, gridCol: 2 },
-  { number: 39, symbol: 'Y', name: 'Yttrium', mass: 88.91, category: 'transition-metal', gridRow: 5, gridCol: 3 },
-  { number: 40, symbol: 'Zr', name: 'Zirconium', mass: 91.22, category: 'transition-metal', gridRow: 5, gridCol: 4 },
-  { number: 41, symbol: 'Nb', name: 'Niobium', mass: 92.91, category: 'transition-metal', gridRow: 5, gridCol: 5 },
-  { number: 42, symbol: 'Mo', name: 'Molybdenum', mass: 95.95, category: 'transition-metal', gridRow: 5, gridCol: 6 },
-  { number: 43, symbol: 'Tc', name: 'Technetium', mass: 98, category: 'transition-metal', gridRow: 5, gridCol: 7 },
-  { number: 44, symbol: 'Ru', name: 'Ruthenium', mass: 101.1, category: 'transition-metal', gridRow: 5, gridCol: 8 },
-  { number: 45, symbol: 'Rh', name: 'Rhodium', mass: 102.9, category: 'transition-metal', gridRow: 5, gridCol: 9 },
-  { number: 46, symbol: 'Pd', name: 'Palladium', mass: 106.4, category: 'transition-metal', gridRow: 5, gridCol: 10 },
-  { number: 47, symbol: 'Ag', name: 'Silver', mass: 107.9, category: 'transition-metal', gridRow: 5, gridCol: 11 },
-  { number: 48, symbol: 'Cd', name: 'Cadmium', mass: 112.4, category: 'transition-metal', gridRow: 5, gridCol: 12 },
-  { number: 49, symbol: 'In', name: 'Indium', mass: 114.8, category: 'post-transition', gridRow: 5, gridCol: 13 },
-  { number: 50, symbol: 'Sn', name: 'Tin', mass: 118.7, category: 'post-transition', gridRow: 5, gridCol: 14 },
-  { number: 51, symbol: 'Sb', name: 'Antimony', mass: 121.8, category: 'metalloid', gridRow: 5, gridCol: 15 },
-  { number: 52, symbol: 'Te', name: 'Tellurium', mass: 127.6, category: 'metalloid', gridRow: 5, gridCol: 16 },
-  { number: 53, symbol: 'I', name: 'Iodine', mass: 126.9, category: 'halogen', gridRow: 5, gridCol: 17 },
-  { number: 54, symbol: 'Xe', name: 'Xenon', mass: 131.3, category: 'noble-gas', gridRow: 5, gridCol: 18 },
+  { number: 37, symbol: 'Rb', name: 'Rubidium', mass: 85.47, category: 'alkali-metal', gridRow: 5, gridCol: 1, electronConfig: '[Kr] 5s¹' },
+  { number: 38, symbol: 'Sr', name: 'Strontium', mass: 87.62, category: 'alkaline-earth', gridRow: 5, gridCol: 2, electronConfig: '[Kr] 5s²' },
+  { number: 39, symbol: 'Y', name: 'Yttrium', mass: 88.91, category: 'transition-metal', gridRow: 5, gridCol: 3, electronConfig: '[Kr] 4d¹ 5s²' },
+  { number: 40, symbol: 'Zr', name: 'Zirconium', mass: 91.22, category: 'transition-metal', gridRow: 5, gridCol: 4, electronConfig: '[Kr] 4d² 5s²' },
+  { number: 41, symbol: 'Nb', name: 'Niobium', mass: 92.91, category: 'transition-metal', gridRow: 5, gridCol: 5, electronConfig: '[Kr] 4d⁴ 5s¹' },
+  { number: 42, symbol: 'Mo', name: 'Molybdenum', mass: 95.95, category: 'transition-metal', gridRow: 5, gridCol: 6, electronConfig: '[Kr] 4d⁵ 5s¹' },
+  { number: 43, symbol: 'Tc', name: 'Technetium', mass: 98, category: 'transition-metal', gridRow: 5, gridCol: 7, electronConfig: '[Kr] 4d⁵ 5s²' },
+  { number: 44, symbol: 'Ru', name: 'Ruthenium', mass: 101.1, category: 'transition-metal', gridRow: 5, gridCol: 8, electronConfig: '[Kr] 4d⁷ 5s¹' },
+  { number: 45, symbol: 'Rh', name: 'Rhodium', mass: 102.9, category: 'transition-metal', gridRow: 5, gridCol: 9, electronConfig: '[Kr] 4d⁸ 5s¹' },
+  { number: 46, symbol: 'Pd', name: 'Palladium', mass: 106.4, category: 'transition-metal', gridRow: 5, gridCol: 10, electronConfig: '[Kr] 4d¹⁰' },
+  { number: 47, symbol: 'Ag', name: 'Silver', mass: 107.9, category: 'transition-metal', gridRow: 5, gridCol: 11, electronConfig: '[Kr] 4d¹⁰ 5s¹' },
+  { number: 48, symbol: 'Cd', name: 'Cadmium', mass: 112.4, category: 'transition-metal', gridRow: 5, gridCol: 12, electronConfig: '[Kr] 4d¹⁰ 5s²' },
+  { number: 49, symbol: 'In', name: 'Indium', mass: 114.8, category: 'post-transition', gridRow: 5, gridCol: 13, electronConfig: '[Kr] 4d¹⁰ 5s² 5p¹' },
+  { number: 50, symbol: 'Sn', name: 'Tin', mass: 118.7, category: 'post-transition', gridRow: 5, gridCol: 14, electronConfig: '[Kr] 4d¹⁰ 5s² 5p²' },
+  { number: 51, symbol: 'Sb', name: 'Antimony', mass: 121.8, category: 'metalloid', gridRow: 5, gridCol: 15, electronConfig: '[Kr] 4d¹⁰ 5s² 5p³' },
+  { number: 52, symbol: 'Te', name: 'Tellurium', mass: 127.6, category: 'metalloid', gridRow: 5, gridCol: 16, electronConfig: '[Kr] 4d¹⁰ 5s² 5p⁴' },
+  { number: 53, symbol: 'I', name: 'Iodine', mass: 126.9, category: 'halogen', gridRow: 5, gridCol: 17, electronConfig: '[Kr] 4d¹⁰ 5s² 5p⁵' },
+  { number: 54, symbol: 'Xe', name: 'Xenon', mass: 131.3, category: 'noble-gas', gridRow: 5, gridCol: 18, electronConfig: '[Kr] 4d¹⁰ 5s² 5p⁶' },
 
-  { number: 55, symbol: 'Cs', name: 'Cesium', mass: 132.9, category: 'alkali-metal', gridRow: 6, gridCol: 1 },
-  { number: 56, symbol: 'Ba', name: 'Barium', mass: 137.3, category: 'alkaline-earth', gridRow: 6, gridCol: 2 },
-  { number: 57, symbol: 'La', name: 'Lanthanum', mass: 138.9, category: 'lanthanide', gridRow: 8, gridCol: 3 },
-  { number: 58, symbol: 'Ce', name: 'Cerium', mass: 140.1, category: 'lanthanide', gridRow: 8, gridCol: 4 },
-  { number: 59, symbol: 'Pr', name: 'Praseodymium', mass: 140.9, category: 'lanthanide', gridRow: 8, gridCol: 5 },
-  { number: 60, symbol: 'Nd', name: 'Neodymium', mass: 144.2, category: 'lanthanide', gridRow: 8, gridCol: 6 },
-  { number: 61, symbol: 'Pm', name: 'Promethium', mass: 145, category: 'lanthanide', gridRow: 8, gridCol: 7 },
-  { number: 62, symbol: 'Sm', name: 'Samarium', mass: 150.4, category: 'lanthanide', gridRow: 8, gridCol: 8 },
-  { number: 63, symbol: 'Eu', name: 'Europium', mass: 152.0, category: 'lanthanide', gridRow: 8, gridCol: 9 },
-  { number: 64, symbol: 'Gd', name: 'Gadolinium', mass: 157.3, category: 'lanthanide', gridRow: 8, gridCol: 10 },
-  { number: 65, symbol: 'Tb', name: 'Terbium', mass: 158.9, category: 'lanthanide', gridRow: 8, gridCol: 11 },
-  { number: 66, symbol: 'Dy', name: 'Dysprosium', mass: 162.5, category: 'lanthanide', gridRow: 8, gridCol: 12 },
-  { number: 67, symbol: 'Ho', name: 'Holmium', mass: 164.9, category: 'lanthanide', gridRow: 8, gridCol: 13 },
-  { number: 68, symbol: 'Er', name: 'Erbium', mass: 167.3, category: 'lanthanide', gridRow: 8, gridCol: 14 },
-  { number: 69, symbol: 'Tm', name: 'Thulium', mass: 168.9, category: 'lanthanide', gridRow: 8, gridCol: 15 },
-  { number: 70, symbol: 'Yb', name: 'Ytterbium', mass: 173.0, category: 'lanthanide', gridRow: 8, gridCol: 16 },
-  { number: 71, symbol: 'Lu', name: 'Lutetium', mass: 175.0, category: 'lanthanide', gridRow: 8, gridCol: 17 },
-  { number: 72, symbol: 'Hf', name: 'Hafnium', mass: 178.5, category: 'transition-metal', gridRow: 6, gridCol: 4 },
-  { number: 73, symbol: 'Ta', name: 'Tantalum', mass: 180.9, category: 'transition-metal', gridRow: 6, gridCol: 5 },
-  { number: 74, symbol: 'W', name: 'Tungsten', mass: 183.8, category: 'transition-metal', gridRow: 6, gridCol: 6 },
-  { number: 75, symbol: 'Re', name: 'Rhenium', mass: 186.2, category: 'transition-metal', gridRow: 6, gridCol: 7 },
-  { number: 76, symbol: 'Os', name: 'Osmium', mass: 190.2, category: 'transition-metal', gridRow: 6, gridCol: 8 },
-  { number: 77, symbol: 'Ir', name: 'Iridium', mass: 192.2, category: 'transition-metal', gridRow: 6, gridCol: 9 },
-  { number: 78, symbol: 'Pt', name: 'Platinum', mass: 195.1, category: 'transition-metal', gridRow: 6, gridCol: 10 },
-  { number: 79, symbol: 'Au', name: 'Gold', mass: 197.0, category: 'transition-metal', gridRow: 6, gridCol: 11 },
-  { number: 80, symbol: 'Hg', name: 'Mercury', mass: 200.6, category: 'transition-metal', gridRow: 6, gridCol: 12 },
-  { number: 81, symbol: 'Tl', name: 'Thallium', mass: 204.4, category: 'post-transition', gridRow: 6, gridCol: 13 },
-  { number: 82, symbol: 'Pb', name: 'Lead', mass: 207.2, category: 'post-transition', gridRow: 6, gridCol: 14 },
-  { number: 83, symbol: 'Bi', name: 'Bismuth', mass: 209.0, category: 'post-transition', gridRow: 6, gridCol: 15 },
-  { number: 84, symbol: 'Po', name: 'Polonium', mass: 209, category: 'metalloid', gridRow: 6, gridCol: 16 },
-  { number: 85, symbol: 'At', name: 'Astatine', mass: 210, category: 'halogen', gridRow: 6, gridCol: 17 },
-  { number: 86, symbol: 'Rn', name: 'Radon', mass: 222, category: 'noble-gas', gridRow: 6, gridCol: 18 },
+  { number: 55, symbol: 'Cs', name: 'Cesium', mass: 132.9, category: 'alkali-metal', gridRow: 6, gridCol: 1, electronConfig: '[Xe] 6s¹' },
+  { number: 56, symbol: 'Ba', name: 'Barium', mass: 137.3, category: 'alkaline-earth', gridRow: 6, gridCol: 2, electronConfig: '[Xe] 6s²' },
+  { number: 57, symbol: 'La', name: 'Lanthanum', mass: 138.9, category: 'lanthanide', gridRow: 8, gridCol: 3, electronConfig: '[Xe] 5d¹ 6s²' },
+  { number: 58, symbol: 'Ce', name: 'Cerium', mass: 140.1, category: 'lanthanide', gridRow: 8, gridCol: 4, electronConfig: '[Xe] 4f¹ 5d¹ 6s²' },
+  { number: 59, symbol: 'Pr', name: 'Praseodymium', mass: 140.9, category: 'lanthanide', gridRow: 8, gridCol: 5, electronConfig: '[Xe] 4f³ 6s²' },
+  { number: 60, symbol: 'Nd', name: 'Neodymium', mass: 144.2, category: 'lanthanide', gridRow: 8, gridCol: 6, electronConfig: '[Xe] 4f⁴ 6s²' },
+  { number: 61, symbol: 'Pm', name: 'Promethium', mass: 145, category: 'lanthanide', gridRow: 8, gridCol: 7, electronConfig: '[Xe] 4f⁵ 6s²' },
+  { number: 62, symbol: 'Sm', name: 'Samarium', mass: 150.4, category: 'lanthanide', gridRow: 8, gridCol: 8, electronConfig: '[Xe] 4f⁶ 6s²' },
+  { number: 63, symbol: 'Eu', name: 'Europium', mass: 152.0, category: 'lanthanide', gridRow: 8, gridCol: 9, electronConfig: '[Xe] 4f⁷ 6s²' },
+  { number: 64, symbol: 'Gd', name: 'Gadolinium', mass: 157.3, category: 'lanthanide', gridRow: 8, gridCol: 10, electronConfig: '[Xe] 4f⁷ 5d¹ 6s²' },
+  { number: 65, symbol: 'Tb', name: 'Terbium', mass: 158.9, category: 'lanthanide', gridRow: 8, gridCol: 11, electronConfig: '[Xe] 4f⁹ 6s²' },
+  { number: 66, symbol: 'Dy', name: 'Dysprosium', mass: 162.5, category: 'lanthanide', gridRow: 8, gridCol: 12, electronConfig: '[Xe] 4f¹⁰ 6s²' },
+  { number: 67, symbol: 'Ho', name: 'Holmium', mass: 164.9, category: 'lanthanide', gridRow: 8, gridCol: 13, electronConfig: '[Xe] 4f¹¹ 6s²' },
+  { number: 68, symbol: 'Er', name: 'Erbium', mass: 167.3, category: 'lanthanide', gridRow: 8, gridCol: 14, electronConfig: '[Xe] 4f¹² 6s²' },
+  { number: 69, symbol: 'Tm', name: 'Thulium', mass: 168.9, category: 'lanthanide', gridRow: 8, gridCol: 15, electronConfig: '[Xe] 4f¹³ 6s²' },
+  { number: 70, symbol: 'Yb', name: 'Ytterbium', mass: 173.0, category: 'lanthanide', gridRow: 8, gridCol: 16, electronConfig: '[Xe] 4f¹⁴ 6s²' },
+  { number: 71, symbol: 'Lu', name: 'Lutetium', mass: 175.0, category: 'lanthanide', gridRow: 8, gridCol: 17, electronConfig: '[Xe] 4f¹⁴ 5d¹ 6s²' },
+  { number: 72, symbol: 'Hf', name: 'Hafnium', mass: 178.5, category: 'transition-metal', gridRow: 6, gridCol: 4, electronConfig: '[Xe] 4f¹⁴ 5d² 6s²' },
+  { number: 73, symbol: 'Ta', name: 'Tantalum', mass: 180.9, category: 'transition-metal', gridRow: 6, gridCol: 5, electronConfig: '[Xe] 4f¹⁴ 5d³ 6s²' },
+  { number: 74, symbol: 'W', name: 'Tungsten', mass: 183.8, category: 'transition-metal', gridRow: 6, gridCol: 6, electronConfig: '[Xe] 4f¹⁴ 5d⁴ 6s²' },
+  { number: 75, symbol: 'Re', name: 'Rhenium', mass: 186.2, category: 'transition-metal', gridRow: 6, gridCol: 7, electronConfig: '[Xe] 4f¹⁴ 5d⁵ 6s²' },
+  { number: 76, symbol: 'Os', name: 'Osmium', mass: 190.2, category: 'transition-metal', gridRow: 6, gridCol: 8, electronConfig: '[Xe] 4f¹⁴ 5d⁶ 6s²' },
+  { number: 77, symbol: 'Ir', name: 'Iridium', mass: 192.2, category: 'transition-metal', gridRow: 6, gridCol: 9, electronConfig: '[Xe] 4f¹⁴ 5d⁷ 6s²' },
+  { number: 78, symbol: 'Pt', name: 'Platinum', mass: 195.1, category: 'transition-metal', gridRow: 6, gridCol: 10, electronConfig: '[Xe] 4f¹⁴ 5d⁹ 6s¹' },
+  { number: 79, symbol: 'Au', name: 'Gold', mass: 197.0, category: 'transition-metal', gridRow: 6, gridCol: 11, electronConfig: '[Xe] 4f¹⁴ 5d¹⁰ 6s¹' },
+  { number: 80, symbol: 'Hg', name: 'Mercury', mass: 200.6, category: 'transition-metal', gridRow: 6, gridCol: 12, electronConfig: '[Xe] 4f¹⁴ 5d¹⁰ 6s²' },
+  { number: 81, symbol: 'Tl', name: 'Thallium', mass: 204.4, category: 'post-transition', gridRow: 6, gridCol: 13, electronConfig: '[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p¹' },
+  { number: 82, symbol: 'Pb', name: 'Lead', mass: 207.2, category: 'post-transition', gridRow: 6, gridCol: 14, electronConfig: '[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p²' },
+  { number: 83, symbol: 'Bi', name: 'Bismuth', mass: 209.0, category: 'post-transition', gridRow: 6, gridCol: 15, electronConfig: '[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p³' },
+  { number: 84, symbol: 'Po', name: 'Polonium', mass: 209, category: 'metalloid', gridRow: 6, gridCol: 16, electronConfig: '[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁴' },
+  { number: 85, symbol: 'At', name: 'Astatine', mass: 210, category: 'halogen', gridRow: 6, gridCol: 17, electronConfig: '[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁵' },
+  { number: 86, symbol: 'Rn', name: 'Radon', mass: 222, category: 'noble-gas', gridRow: 6, gridCol: 18, electronConfig: '[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁶' },
 
-  { number: 87, symbol: 'Fr', name: 'Francium', mass: 223, category: 'alkali-metal', gridRow: 7, gridCol: 1 },
-  { number: 88, symbol: 'Ra', name: 'Radium', mass: 226, category: 'alkaline-earth', gridRow: 7, gridCol: 2 },
-  { number: 89, symbol: 'Ac', name: 'Actinium', mass: 227, category: 'actinide', gridRow: 9, gridCol: 3 },
-  { number: 90, symbol: 'Th', name: 'Thorium', mass: 232.0, category: 'actinide', gridRow: 9, gridCol: 4 },
-  { number: 91, symbol: 'Pa', name: 'Protactinium', mass: 231.0, category: 'actinide', gridRow: 9, gridCol: 5 },
-  { number: 92, symbol: 'U', name: 'Uranium', mass: 238.0, category: 'actinide', gridRow: 9, gridCol: 6 },
-  { number: 93, symbol: 'Np', name: 'Neptunium', mass: 237, category: 'actinide', gridRow: 9, gridCol: 7 },
-  { number: 94, symbol: 'Pu', name: 'Plutonium', mass: 244, category: 'actinide', gridRow: 9, gridCol: 8 },
-  { number: 95, symbol: 'Am', name: 'Americium', mass: 243, category: 'actinide', gridRow: 9, gridCol: 9 },
-  { number: 96, symbol: 'Cm', name: 'Curium', mass: 247, category: 'actinide', gridRow: 9, gridCol: 10 },
-  { number: 97, symbol: 'Bk', name: 'Berkelium', mass: 247, category: 'actinide', gridRow: 9, gridCol: 11 },
-  { number: 98, symbol: 'Cf', name: 'Californium', mass: 251, category: 'actinide', gridRow: 9, gridCol: 12 },
-  { number: 99, symbol: 'Es', name: 'Einsteinium', mass: 252, category: 'actinide', gridRow: 9, gridCol: 13 },
-  { number: 100, symbol: 'Fm', name: 'Fermium', mass: 257, category: 'actinide', gridRow: 9, gridCol: 14 },
-  { number: 101, symbol: 'Md', name: 'Mendelevium', mass: 258, category: 'actinide', gridRow: 9, gridCol: 15 },
-  { number: 102, symbol: 'No', name: 'Nobelium', mass: 259, category: 'actinide', gridRow: 9, gridCol: 16 },
-  { number: 103, symbol: 'Lr', name: 'Lawrencium', mass: 262, category: 'actinide', gridRow: 9, gridCol: 17 },
-  { number: 104, symbol: 'Rf', name: 'Rutherfordium', mass: 267, category: 'transition-metal', gridRow: 7, gridCol: 4 },
-  { number: 105, symbol: 'Db', name: 'Dubnium', mass: 268, category: 'transition-metal', gridRow: 7, gridCol: 5 },
-  { number: 106, symbol: 'Sg', name: 'Seaborgium', mass: 269, category: 'transition-metal', gridRow: 7, gridCol: 6 },
-  { number: 107, symbol: 'Bh', name: 'Bohrium', mass: 270, category: 'transition-metal', gridRow: 7, gridCol: 7 },
-  { number: 108, symbol: 'Hs', name: 'Hassium', mass: 277, category: 'transition-metal', gridRow: 7, gridCol: 8 },
-  { number: 109, symbol: 'Mt', name: 'Meitnerium', mass: 278, category: 'transition-metal', gridRow: 7, gridCol: 9 },
-  { number: 110, symbol: 'Ds', name: 'Darmstadtium', mass: 281, category: 'transition-metal', gridRow: 7, gridCol: 10 },
-  { number: 111, symbol: 'Rg', name: 'Roentgenium', mass: 282, category: 'transition-metal', gridRow: 7, gridCol: 11 },
-  { number: 112, symbol: 'Cn', name: 'Copernicium', mass: 285, category: 'transition-metal', gridRow: 7, gridCol: 12 },
-  { number: 113, symbol: 'Nh', name: 'Nihonium', mass: 286, category: 'post-transition', gridRow: 7, gridCol: 13 },
-  { number: 114, symbol: 'Fl', name: 'Flerovium', mass: 289, category: 'post-transition', gridRow: 7, gridCol: 14 },
-  { number: 115, symbol: 'Mc', name: 'Moscovium', mass: 290, category: 'post-transition', gridRow: 7, gridCol: 15 },
-  { number: 116, symbol: 'Lv', name: 'Livermorium', mass: 293, category: 'post-transition', gridRow: 7, gridCol: 16 },
-  { number: 117, symbol: 'Ts', name: 'Tennessine', mass: 294, category: 'halogen', gridRow: 7, gridCol: 17 },
-  { number: 118, symbol: 'Og', name: 'Oganesson', mass: 294, category: 'noble-gas', gridRow: 7, gridCol: 18 },
+  { number: 87, symbol: 'Fr', name: 'Francium', mass: 223, category: 'alkali-metal', gridRow: 7, gridCol: 1, electronConfig: '[Rn] 7s¹' },
+  { number: 88, symbol: 'Ra', name: 'Radium', mass: 226, category: 'alkaline-earth', gridRow: 7, gridCol: 2, electronConfig: '[Rn] 7s²' },
+  { number: 89, symbol: 'Ac', name: 'Actinium', mass: 227, category: 'actinide', gridRow: 9, gridCol: 3, electronConfig: '[Rn] 6d¹ 7s²' },
+  { number: 90, symbol: 'Th', name: 'Thorium', mass: 232.0, category: 'actinide', gridRow: 9, gridCol: 4, electronConfig: '[Rn] 6d² 7s²' },
+  { number: 91, symbol: 'Pa', name: 'Protactinium', mass: 231.0, category: 'actinide', gridRow: 9, gridCol: 5, electronConfig: '[Rn] 5f² 6d¹ 7s²' },
+  { number: 92, symbol: 'U', name: 'Uranium', mass: 238.0, category: 'actinide', gridRow: 9, gridCol: 6, electronConfig: '[Rn] 5f³ 6d¹ 7s²' },
+  { number: 93, symbol: 'Np', name: 'Neptunium', mass: 237, category: 'actinide', gridRow: 9, gridCol: 7, electronConfig: '[Rn] 5f⁴ 6d¹ 7s²' },
+  { number: 94, symbol: 'Pu', name: 'Plutonium', mass: 244, category: 'actinide', gridRow: 9, gridCol: 8, electronConfig: '[Rn] 5f⁶ 7s²' },
+  { number: 95, symbol: 'Am', name: 'Americium', mass: 243, category: 'actinide', gridRow: 9, gridCol: 9, electronConfig: '[Rn] 5f⁷ 7s²' },
+  { number: 96, symbol: 'Cm', name: 'Curium', mass: 247, category: 'actinide', gridRow: 9, gridCol: 10, electronConfig: '[Rn] 5f⁷ 6d¹ 7s²' },
+  { number: 97, symbol: 'Bk', name: 'Berkelium', mass: 247, category: 'actinide', gridRow: 9, gridCol: 11, electronConfig: '[Rn] 5f⁹ 7s²' },
+  { number: 98, symbol: 'Cf', name: 'Californium', mass: 251, category: 'actinide', gridRow: 9, gridCol: 12, electronConfig: '[Rn] 5f¹⁰ 7s²' },
+  { number: 99, symbol: 'Es', name: 'Einsteinium', mass: 252, category: 'actinide', gridRow: 9, gridCol: 13, electronConfig: '[Rn] 5f¹¹ 7s²' },
+  { number: 100, symbol: 'Fm', name: 'Fermium', mass: 257, category: 'actinide', gridRow: 9, gridCol: 14, electronConfig: '[Rn] 5f¹² 7s²' },
+  { number: 101, symbol: 'Md', name: 'Mendelevium', mass: 258, category: 'actinide', gridRow: 9, gridCol: 15, electronConfig: '[Rn] 5f¹³ 7s²' },
+  { number: 102, symbol: 'No', name: 'Nobelium', mass: 259, category: 'actinide', gridRow: 9, gridCol: 16, electronConfig: '[Rn] 5f¹⁴ 7s²' },
+  { number: 103, symbol: 'Lr', name: 'Lawrencium', mass: 262, category: 'actinide', gridRow: 9, gridCol: 17, electronConfig: '[Rn] 5f¹⁴ 7s² 7p¹' },
+  { number: 104, symbol: 'Rf', name: 'Rutherfordium', mass: 267, category: 'transition-metal', gridRow: 7, gridCol: 4, electronConfig: '[Rn] 5f¹⁴ 6d² 7s²' },
+  { number: 105, symbol: 'Db', name: 'Dubnium', mass: 268, category: 'transition-metal', gridRow: 7, gridCol: 5, electronConfig: '[Rn] 5f¹⁴ 6d³ 7s²' },
+  { number: 106, symbol: 'Sg', name: 'Seaborgium', mass: 269, category: 'transition-metal', gridRow: 7, gridCol: 6, electronConfig: '[Rn] 5f¹⁴ 6d⁴ 7s²' },
+  { number: 107, symbol: 'Bh', name: 'Bohrium', mass: 270, category: 'transition-metal', gridRow: 7, gridCol: 7, electronConfig: '[Rn] 5f¹⁴ 6d⁵ 7s²' },
+  { number: 108, symbol: 'Hs', name: 'Hassium', mass: 277, category: 'transition-metal', gridRow: 7, gridCol: 8, electronConfig: '[Rn] 5f¹⁴ 6d⁶ 7s²' },
+  { number: 109, symbol: 'Mt', name: 'Meitnerium', mass: 278, category: 'transition-metal', gridRow: 7, gridCol: 9, electronConfig: '[Rn] 5f¹⁴ 6d⁷ 7s²' },
+  { number: 110, symbol: 'Ds', name: 'Darmstadtium', mass: 281, category: 'transition-metal', gridRow: 7, gridCol: 10, electronConfig: '[Rn] 5f¹⁴ 6d⁸ 7s²' },
+  { number: 111, symbol: 'Rg', name: 'Roentgenium', mass: 282, category: 'transition-metal', gridRow: 7, gridCol: 11, electronConfig: '[Rn] 5f¹⁴ 6d⁹ 7s²' },
+  { number: 112, symbol: 'Cn', name: 'Copernicium', mass: 285, category: 'transition-metal', gridRow: 7, gridCol: 12, electronConfig: '[Rn] 5f¹⁴ 6d¹⁰ 7s²' },
+  { number: 113, symbol: 'Nh', name: 'Nihonium', mass: 286, category: 'post-transition', gridRow: 7, gridCol: 13, electronConfig: '[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p¹' },
+  { number: 114, symbol: 'Fl', name: 'Flerovium', mass: 289, category: 'post-transition', gridRow: 7, gridCol: 14, electronConfig: '[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p²' },
+  { number: 115, symbol: 'Mc', name: 'Moscovium', mass: 290, category: 'post-transition', gridRow: 7, gridCol: 15, electronConfig: '[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p³' },
+  { number: 116, symbol: 'Lv', name: 'Livermorium', mass: 293, category: 'post-transition', gridRow: 7, gridCol: 16, electronConfig: '[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁴' },
+  { number: 117, symbol: 'Ts', name: 'Tennessine', mass: 294, category: 'halogen', gridRow: 7, gridCol: 17, electronConfig: '[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁵' },
+  { number: 118, symbol: 'Og', name: 'Oganesson', mass: 294, category: 'noble-gas', gridRow: 7, gridCol: 18, electronConfig: '[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁶' },
 ];
+
+const groupLabels = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII'];
+const periodLabels = [1, 2, 3, 4, 5, 6, 7];
 
 const categoryColors = {
   'alkali-metal': 'from-[#F75594] to-[#F76755]',
@@ -157,14 +160,14 @@ export function PeriodicTable() {
   const [hoveredCategory, setHoveredCategory] = useState<string | null>(null);
 
   return (
-    <div className="min-h-screen w-full p-8 bg-gradient-to-br from-[#0d1117] via-[#161b22] to-[#0d1117] relative overflow-hidden">
+    <div className="min-h-screen w-full p-4 sm:p-6 lg:p-8 bg-gradient-to-br from-[#0d1117] via-[#161b22] to-[#0d1117] relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-[url('/src/imports/spacebackground.png')] bg-cover bg-center opacity-20" />
       <div className="absolute inset-0 bg-[url('/src/imports/vanilla_galaxy.png')] bg-cover bg-center opacity-10" />
 
       {/* Title */}
-      <div className="relative z-10 mb-8 text-center" style={{ fontFamily: 'Aclonica, sans-serif' }}>
-        <h1 className="text-6xl font-bold bg-gradient-to-r from-[#14b5ff] via-[#5280ff] to-[#7952f5] bg-clip-text text-transparent mb-4 drop-shadow-[0_4px_12px_rgba(20,181,255,0.6)]"
+      <div className="relative z-10 mb-6 sm:mb-8 text-center" style={{ fontFamily: 'Aclonica, sans-serif' }}>
+        <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold bg-gradient-to-r from-[#14b5ff] via-[#5280ff] to-[#7952f5] bg-clip-text text-transparent mb-3 sm:mb-4 drop-shadow-[0_4px_12px_rgba(20,181,255,0.6)]"
           style={{
             WebkitTextStroke: '1px rgba(255,255,255,0.2)',
             paintOrder: 'stroke fill',
@@ -172,22 +175,22 @@ export function PeriodicTable() {
         >
           Interactive Periodic Table
         </h1>
-        <p className="text-xl text-white/90 drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]">Eigenscribe Glassmorphic Edition</p>
+        <p className="text-sm sm:text-lg lg:text-xl text-white/90 drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]">Eigenscribe Glassmorphic Edition</p>
       </div>
 
       {/* Legend */}
-      <div className="relative z-10 mb-8 flex flex-wrap justify-center gap-3" style={{ fontFamily: 'Aclonica, sans-serif' }}>
+      <div className="relative z-10 mb-6 sm:mb-8 flex flex-wrap justify-center gap-2 sm:gap-3" style={{ fontFamily: 'Aclonica, sans-serif' }}>
         {Object.entries(categoryColors).map(([category, gradient]) => (
           <button
             key={category}
             onMouseEnter={() => setHoveredCategory(category)}
             onMouseLeave={() => setHoveredCategory(null)}
-            className={`px-5 py-3 rounded-xl backdrop-blur-xl bg-gradient-to-r ${gradient} bg-opacity-20 border-2 border-white/40 transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:border-white/70 active:scale-95`}
+            className={`px-3 sm:px-5 py-2 sm:py-3 rounded-xl backdrop-blur-xl bg-gradient-to-r ${gradient} bg-opacity-20 border-2 border-white/40 transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:border-white/70 active:scale-95`}
             style={{
               boxShadow: '0 4px 20px rgba(0,0,0,0.5), inset 0 1px 2px rgba(255,255,255,0.2)',
             }}
           >
-            <span className="text-base font-semibold text-white capitalize drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
+            <span className="text-sm sm:text-base font-semibold text-white capitalize drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
               style={{
                 WebkitTextStroke: '0.3px rgba(255,255,255,0.4)',
                 paintOrder: 'stroke fill',
@@ -200,8 +203,37 @@ export function PeriodicTable() {
       </div>
 
       {/* Periodic Table Grid */}
-      <div className="relative z-10 max-w-[1800px] mx-auto">
-        <div className="grid gap-2" style={{ gridTemplateColumns: 'repeat(18, minmax(0, 1fr))' }}>
+      <div className="relative z-10 max-w-[1800px] mx-auto overflow-x-auto pb-2">
+        <div className="grid gap-1 sm:gap-2 min-w-[800px] sm:min-w-[1040px] lg:min-w-0" style={{ gridTemplateColumns: 'repeat(19, minmax(0, 1fr))' }}>
+          <div className="aspect-square" />
+          {groupLabels.map((label, index) => (
+            <div
+              key={`group-${label}`}
+              className="aspect-square flex items-center justify-center text-[8px] sm:text-[10px] lg:text-xs font-semibold text-white/90 drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)]"
+              style={{
+                gridColumn: index + 2,
+                gridRow: 1,
+                fontFamily: 'Aclonica, sans-serif',
+              }}
+            >
+              {label}
+            </div>
+          ))}
+
+          {periodLabels.map((label) => (
+            <div
+              key={`period-${label}`}
+              className="aspect-square flex items-center justify-center text-[8px] sm:text-[10px] lg:text-xs font-semibold text-white/90 drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)]"
+              style={{
+                gridColumn: 1,
+                gridRow: label + 1,
+                fontFamily: 'Aclonica, sans-serif',
+              }}
+            >
+              {label}
+            </div>
+          ))}
+
           {elements.map((element) => {
             const isHovered = hoveredCategory === element.category;
             const isDimmed = hoveredCategory && hoveredCategory !== element.category;
@@ -211,7 +243,7 @@ export function PeriodicTable() {
                 key={element.number}
                 onClick={() => setSelectedElement(element)}
                 className={`
-                  aspect-square p-3 rounded-xl backdrop-blur-xl
+                  aspect-square p-1 sm:p-1.5 lg:p-2 rounded-lg sm:rounded-xl backdrop-blur-xl
                   bg-gradient-to-br ${categoryColors[element.category as keyof typeof categoryColors]}
                   bg-opacity-10 border-2 border-white/40
                   transition-all duration-300 ease-out
@@ -222,8 +254,8 @@ export function PeriodicTable() {
                   group cursor-pointer relative
                 `}
                 style={{
-                  gridColumn: element.gridCol,
-                  gridRow: element.gridRow,
+                  gridColumn: element.gridCol + 1,
+                  gridRow: element.gridRow + 1,
                   fontFamily: 'Aclonica, sans-serif',
                   boxShadow: '0 4px 20px rgba(0,0,0,0.5), inset 0 1px 2px rgba(255,255,255,0.15)',
                 }}
@@ -240,7 +272,7 @@ export function PeriodicTable() {
                 />
 
                 <div className="h-full flex flex-col justify-between items-center text-center overflow-hidden relative z-10">
-                  <div className="text-xs font-semibold text-white group-hover:text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)]"
+                  <div className="text-[9px] sm:text-[10px] lg:text-xs font-semibold text-white group-hover:text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)]"
                     style={{
                       WebkitTextStroke: '0.3px rgba(255,255,255,0.4)',
                       paintOrder: 'stroke fill',
@@ -248,7 +280,7 @@ export function PeriodicTable() {
                   >
                     {element.number}
                   </div>
-                  <div className={`font-bold bg-gradient-to-br ${categoryColors[element.category as keyof typeof categoryColors]} bg-clip-text text-transparent group-hover:scale-110 transition-transform drop-shadow-[0_3px_8px_rgba(0,0,0,0.9)] ${element.symbol.length > 1 ? 'text-3xl' : 'text-4xl'}`}
+                  <div className={`font-bold bg-gradient-to-br ${categoryColors[element.category as keyof typeof categoryColors]} bg-clip-text text-transparent group-hover:scale-110 transition-transform drop-shadow-[0_3px_8px_rgba(0,0,0,0.9)] ${element.symbol.length > 1 ? 'text-base sm:text-xl lg:text-2xl' : 'text-lg sm:text-2xl lg:text-3xl'}`}
                     style={{
                       WebkitTextStroke: '0.8px rgba(255,255,255,0.4)',
                       paintOrder: 'stroke fill',
@@ -256,15 +288,7 @@ export function PeriodicTable() {
                   >
                     {element.symbol}
                   </div>
-                  <div className="text-xs text-white group-hover:text-white leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] truncate max-w-full px-1"
-                    style={{
-                      WebkitTextStroke: '0.3px rgba(255,255,255,0.3)',
-                      paintOrder: 'stroke fill',
-                    }}
-                  >
-                    {element.name}
-                  </div>
-                  <div className="text-[10px] text-white/90 group-hover:text-white drop-shadow-[0_2px_3px_rgba(0,0,0,0.7)]"
+                  <div className="text-[7px] sm:text-[8px] lg:text-[9px] text-white/90 group-hover:text-white drop-shadow-[0_2px_3px_rgba(0,0,0,0.7)]"
                     style={{
                       WebkitTextStroke: '0.2px rgba(255,255,255,0.3)',
                       paintOrder: 'stroke fill',
@@ -278,10 +302,6 @@ export function PeriodicTable() {
           })}
         </div>
 
-        {/* Lanthanides and Actinides Separator */}
-        <div className="mt-8 text-center text-base text-white mb-2 drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]" style={{ fontFamily: 'Aclonica, sans-serif' }}>
-          Lanthanides & Actinides
-        </div>
       </div>
 
       {/* Element Detail Modal */}
